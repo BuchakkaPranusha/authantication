@@ -3,6 +3,8 @@ import 'package:flutter_project/login.dart';
 import 'package:flutter_project/signup.dart';
 import 'package:flutter_project/widgets/buttons.dart';
 
+import 'booking_confirm_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -36,7 +38,10 @@ class HomePage extends StatelessWidget {
             MyButtons(onTap: (){
               Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => const LogInScreen(),
+                // builder: (context) => const LogInScreen(),
+                  builder: (context) =>  BookingConfirmScreen(),
+
+
               ),
             );
             }, text: "LogIn"),
